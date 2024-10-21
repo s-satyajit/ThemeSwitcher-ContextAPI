@@ -1,10 +1,10 @@
 import './App.css'
-import { useState, useContext } from 'react'
+import { useState, useContext, useEffect } from 'react'
 import { ThemeProvider } from './context/theme'
 
 function App() {
 
-  const [themeMode, setThemeMode] = useState('light')
+  const [themeMode, setThemeMode] = useState('light')  
 
   const lightTheme = () => {
     setThemeMode('light')
@@ -14,12 +14,12 @@ function App() {
     setThemeMode('dark')
   }
 
-  // Logic for change in background
+  // Logic for theme change
 
-  useContext(() => {
-    document.querySelector('html').classList.add('light', 'dark')
-    document.querySelector('html').classList.remove(themeMode)
-  }, [])
+  useEffect(() => {
+    document.querySelector('html').classList.remove('light', 'dark');
+    document.querySelector('html').classList.add(themeMode)
+  }, [themeMode])
 
   return (
     <ThemeProvider value={{themeMode, lightTheme, darkTheme}} >
