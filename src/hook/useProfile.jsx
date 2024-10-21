@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function  useProfilePic() {
+function  useProfile() {
 
     const [data, setData] = useState([])
 
@@ -13,4 +13,4 @@ function  useProfilePic() {
     return data;
 }
 
-export default useProfilePic;
+export default useProfile;
