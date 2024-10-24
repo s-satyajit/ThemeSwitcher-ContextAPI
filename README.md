@@ -33,3 +33,9 @@
 ## Contributing 
 Feel free to fork this repository and make your improvements. Pull requests are welcome!
 
+## Acknowledgement
+
+A special thank you to <a href="https://github.com/hiteshchoudhary">Hitesh Choudhary </a>sir for his insightful tutorial. <a href="https://youtu.be/Kduq5HxJdj4?si=M7Jik_-um9l5aCMF">Check out his content here.</a>
+
+![Hitsh Choudhary's Tutorial](image.png)
+
